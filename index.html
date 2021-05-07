@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="index.css" rel="stylesheet"/>
+    <script src="calcu.js" type="text/javascript"></script>
+</head>
+<body>
+   
+    <div class="micalcu">
+        <form name="calcus" id="calcus">
+            <input type="text" name="entrada" id="entrada">
+            <div>
+                <input type="button" id="uno" value="1" onclick="tomarValor(document.getElementById('uno').value)">
+                <input type="button" id="dos" value="2" onclick="tomarValor(document.getElementById('dos').value)">
+                <input type="button" id="tres" value="3" onclick="tomarValor(document.getElementById('tres').value)">
+                <input type="button" id="mas" value="+" onclick="tomarValor(document.getElementById('mas').value)">
+            </div>
+            <div>
+                <input type="button" id="cuac" value="4" onclick="tomarValor(document.getElementById('cuac').value)">
+                <input type="button" id="cinco" value="5" onclick="tomarValor(document.getElementById('cinco').value)">
+                <input type="button" id="seis" value="6" onclick="tomarValor(document.getElementById('seis').value)">
+                <input type="button" id="resta" value="-" onclick="tomarValor(document.getElementById('resta').value)">
+            </div>
+            <div>
+                <input type="button" id="serresiete" value="7" onclick="tomarValor(document.getElementById('serresiete').value)">
+                <input type="button" id="ocho" value="8" onclick="tomarValor(document.getElementById('ocho').value)">
+                <input type="button" id="nueve" value="9" onclick="tomarValor(document.getElementById('nueve').value)">
+                <input type="button" id="por" value="*" onclick="tomarValor(document.getElementById('por').value)">
+            </div>
+            <div>
+                <input type="button" id="cero" value="0" onclick="tomarValor(document.getElementById('cero').value)">
+                <input type="button" id="decimal" value="." onclick="tomarValor(document.getElementById('decimal').value)">
+                <input type="button" id="dividir" value="/" onclick="tomarValor(document.getElementById('dividir').value)">
+               
+            </div>
+            <div class="resultados">
+                <input type="button" id="igual" value="=" onclick="calcularResultado()">
+                <button type="button" id="limpiar" value="" onclick="limpiarValor(document.getElementById('limpiar').value)">C</button>
+            </div>
+    
+        </form>	
+        </div>
+
+
+</body>
+</html>
+
+
